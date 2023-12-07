@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 4200:4200
+    environment:
+      - NG_CLI_ANALYTICS=false
